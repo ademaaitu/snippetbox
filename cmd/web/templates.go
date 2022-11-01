@@ -7,11 +7,12 @@ import (
 	"time"
 )
 
-// Include a Snippets field in the templateData struct.
+// Add a Form field with the type "any".
 type templateData struct {
 	CurrentYear int
 	Snippet     *models.Snippet
 	Snippets    []*models.Snippet
+	Form        any
 }
 
 func humanDate(t time.Time) string {
